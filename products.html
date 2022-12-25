@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<title>Indunil Motors</title>
+        <script src="http://kit.fontawesome.com/6e53ca7139.js"></script><!--font awesome-->
+		<link rel="stylesheet" href="products.css"><!--CSS style page-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Aos libary-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="logo.png"><!--logo on the title-->
+	</head>
+    <!--Slider-->
+	<body onload="slider()">
+		<div class="banner">
+            <div class="slider">
+                <img src="pr1.jpeg" id="sliderImg">
+            </div>
+            <div class="overlay">
+                  <div class="navbar">
+                <img src="web%20logo.png" class="logo1">
+               
+                <nav>
+                    
+                    <ul>
+                        <label for="" class="menu-btn">
+                            <i class="fas fa-bars"></i>
+                           
+                        </label>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about%20us.html">About us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="Contactus.html">Contact us</a></li>
+                        <li class="signin" ><a href="signin.html">Signin</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            </div>
+                
+            </div>
+        </div>
+        <div class="hero" >
+            <span class="big-circle one"></span>
+            <span class="small-circle"></span>
+            <!--products-->
+            <h1>Our Products</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="item1.jpg">
+                        <h2>Armature</h2>
+                        <p>Starte motor Armature</p>
+                    </div>
+                </div>
+                <div class="col">
+                       <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="item2.jpg">
+                        <h2>Brush Holder</h2>
+                        <p>Starte motor Brush Holder</p>
+                    </div>
+                </div>
+                <div class="col" >
+                       <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="item3.jpg">
+                        <h2>Solenid Switch</h2>
+                        <p>Starte motor Solenid Switch</p>
+                    </div>
+                </div>
+                 <div class="col" >
+                       <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="item4.jpeg">
+                        <h2>Carbon Brush</h2>
+                        <p>Alternator & Motor Carbon Brush</p>
+                    </div>
+                </div>
+                 <div class="col" >
+                       <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="item5.jpg">
+                        <h2>Bulbs</h2>
+                        <p>Motor vehicle bulbs</p>
+                    </div>
+                </div>
+                 <div class="col" >
+                       <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="item6.jpg">
+                        <h2>Battery Terminal</h2>
+                        <p>Battery terminal and battery clips</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!--social media icons-->
+        <div class="icons">
+            <ul>
+                <a href="#"><li class="facebook">Facebook<i class="fa fa-facebook"></i></li></a>
+                <a href="#"><li class="Google">Google<i class="fa fa-google"></i></li></a>
+                <a href="#"><li class="whatsapp">Whatsapp<i class="fa fa-whatsapp"></i></li></a> 
+                <a href="#"><li class="twitter">Twitter<i class="fa fa-twitter"></i></li></a>       
+            </ul>
+        
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="row">
+                <div class="coloum">
+                    <img src="web%20logo.png" class="logo">
+                    <p>We are the pioners is motor spare parts industry with high custemer satisfation </p>
+                </div>
+                <div class="coloum">
+                    <h3>Shop</h3>
+                    <p>62/A,</p>
+                    <p>Oruthota, Gampaha,</p>
+                    <p>Western provine, Sri Lanka</p>
+                    <p class="email">indunilmotorsgm@gmail.com</p>
+                    <h4>+9477-3524011</h4>
+                </div>
+                <div class="coloum">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="Contactus.html">Contat Us</a></li>
+                        <li><a href="signin.html">Sign in</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </footer>
+        <!--Image slider Javascript-->
+        <script>
+            var sliderImg = document.getElementById("sliderImg");
+            var images = new Array(
+                "pr1.jpeg",
+                "pr2.jpeg",
+                "pr3.jpeg"
+            );
+            var len = images.length;
+            var i = 0;
+            
+            function slider(){
+                if(i > len-1){
+                    i=0;
+                }
+                sliderImg.src = images[i];
+                i++;
+                setTimeout('slider()',3000);
+            }
+            
+        </script>
+        
+        <!--Aos libary-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once:true
+            });
+        </script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
